@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AudioActivity">
+
+
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@android:drawable/presence_audio_busy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kaydet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@color/pale_violet_red" />
+        <Button
+            android:id="@+id/durdur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Durdur"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@color/gray" />
+        <Button
+            android:id="@+id/oynat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oynat"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@color/medium_orchid"/>
+
+    </LinearLayout>
+</LinearLayout>

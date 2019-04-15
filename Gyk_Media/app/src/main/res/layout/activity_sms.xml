@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsActivity"
+    android:background="@color/thistle">
+
+    <EditText
+        android:id="@+id/telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:textColorHint="@color/blue_violet"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telefon Numarası"/>
+
+    <EditText
+        android:id="@+id/mesaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/telefon"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:textColorHint="@color/blue_violet"
+        android:inputType="text"
+        android:hint="Mesajınız"
+        />
+
+    <Button
+        android:id="@+id/smsGonder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp"
+        android:text="SMS Gönder"
+        android:background="@color/slate_blue"
+        android:textColor="@color/white"/>
+</RelativeLayout>
