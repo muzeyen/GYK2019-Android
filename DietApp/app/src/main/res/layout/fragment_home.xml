@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/renkliLinear"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/oran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Vücut Kitle Endeksi Hesapla"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/kiloText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kilonuz"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/renkliLinear"/>
+    <EditText
+        android:id="@+id/boyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Boyunuz (cm)"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/kiloText"/>
+
+    <Button
+        android:id="@+id/hesaplaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boyText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Hesapla"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
