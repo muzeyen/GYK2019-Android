@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="96dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/gezginkadin"/>
+    <ImageView
+        android:id="@+id/profileDegis"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/photo"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Müzeyyennur YILGIN"
+        android:textColor="@color/md_purple_900"
+        android:textSize="26sp"/>
+    <TextView
+        android:id="@+id/profile_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_name"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="@color/md_deep_purple_400"
+        android:text="Geleceği yazan kadın"/>
+    <TextView
+        android:id="@+id/profile_visit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gezdiğim Yerler"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/profile_bio"
+        android:textSize="16sp"
+        android:textColor="@color/md_deep_purple_400"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/profile_user_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_visit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Ankara,İstanbul,Trabzon,Muğla,Aydın,Antalya"
+        android:textSize="16sp"
+        android:textColor="@color/md_deep_purple_400"/>
+    <ImageView
+        android:id="@+id/profile_user_insta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/profile_user_place"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/instagram"/>
+
+
+
+</RelativeLayout>

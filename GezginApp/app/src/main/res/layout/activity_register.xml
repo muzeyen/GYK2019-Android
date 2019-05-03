@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity"
+    android:background="@drawable/gezgin">
+
+    <EditText
+        android:id="@+id/user_email_register_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Adresiniz"
+        android:textColorHint="@color/md_black_1000"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/md_black_1000"/>
+
+    <EditText
+        android:id="@+id/user_password_register_et"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/md_black_1000"
+        android:layout_height="wrap_content"
+        android:hint="Parolanız"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/user_email_register_et"
+        android:textColor="@color/md_black_1000"/>
+    <EditText
+        android:id="@+id/user_confirm_password"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/md_black_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Parolanızı Doğrulayın"
+        android:layout_below="@id/user_password_register_et"
+        android:textColor="@color/md_black_1000"/>
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_orange_400"
+        android:textColor="@color/md_deep_orange_900"
+        android:layout_below="@id/user_confirm_password"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="40dp"
+        android:text="KAYIT OL"/>
+
+</RelativeLayout>

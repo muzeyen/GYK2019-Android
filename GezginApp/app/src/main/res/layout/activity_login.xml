@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gezgin">
+
+    <EditText
+        android:id="@+id/user_email_login_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Adresiniz"
+        android:textColorHint="@color/md_black_1000"
+
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/user_password_login_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifreniz"
+        android:password="true"
+        android:textColorHint="@color/md_black_1000"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/user_email_login_et" />
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GİRİŞ"
+        android:textSize="15sp"
+        android:textColor="@color/md_indigo_900"
+        android:layout_marginTop="80dp"
+        android:background="@color/md_indigo_400"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="180dp"
+        android:layout_below="@id/user_password_login_et"/>
+    <Button
+        android:id="@+id/button_go_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="20dp"
+        android:text="KAYIT OL"
+        android:textColor="@color/md_indigo_900"
+        android:background="@color/md_indigo_400"
+        android:layout_below="@id/button_login"/>
+
+</RelativeLayout>
